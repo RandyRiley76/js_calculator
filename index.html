@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <title>Calculator :: Randy Riley </title>
+  <link href="https://fonts.googleapis.com/css?family=Aldrich" rel="stylesheet">
+
+  <style>
+  body{
+    font-family: 'Aldrich', sans-serif;
+    background-color: #444;
+    text-align: center;
+  }
+  button{
+    height: 50px;
+    width: 70px;
+    font-size: 25px;
+    margin: 5px;
+    background-color: #b7b7b5;
+    color: black;
+  }
+  #allClear , #clearElement{
+    background-color: #de3737;
+    color: white;
+  }
+  #calcBody{
+    border-radius: 25px;
+    background-color: #8b8d94;
+    width : 350px;
+    height: 445px;
+    margin: auto;
+    box-shadow: 10px 10px 10px #222;
+  }
+  #screen{
+    border-radius: 5px;
+    background-color: #c9d8c3;
+    width: 325px;
+    height: 75px;
+    margin: 10px auto;
+    text-align: right;
+    box-shadow: -2px -3px 6px #555;
+  }
+  #mainText{
+    font-size: 50px;
+    margin: 5px;
+    padding-top: 10px;
+  }
+  #smallText{
+    position: relative;
+    top: -10px;
+    font-size: 15px;
+    margin-right: 10px;
+  }
+  #equals{
+    height: 110px;
+    float:right;
+    margin-right: 10px;
+  }
+  #but0{
+    width: 153px;
+  }
+  #topText{
+    padding-top: 10px;
+    color: #ddd;
+    text-shadow: 2px 2px 1px #333;
+  }
+  .symbol{
+    background-color: #333;
+    color: white;
+  }
+  </style>
+</head>
+<body>
+<div id="calcBody">
+  <p id='topText'>JS-CALCULATOR</p>
+  <div id="screen"><div id='mainText'>0</div><div id='smallText'>0</div>
+  </div>
+<button onclick="allClear();" id="allClear">AC</button>
+<button onclick="clearElement();" id="clearElement">CE</button>
+<button onclick="mathPressed('/');" class="symbol">/</button>
+<button onclick="mathPressed('*');" class="symbol">X</button><br>
+<button onclick="numPressed(7);">7</button>
+<button onclick="numPressed(8);">8</button>
+<button onclick="numPressed(9);">9</button>
+<button onclick="mathPressed('-');" class="symbol">-</button><br>
+<button onclick="numPressed(4);">4</button>
+<button onclick="numPressed(5);">5</button>
+<button onclick="numPressed(6);">6</button>
+<button onclick="mathPressed('+');" class="symbol">+</button><br>
+<button onclick="numPressed(1);">1</button>
+<button onclick="numPressed(2);">2</button>
+<button onclick="numPressed(3);">3</button>
+<button onclick="equals();"id='equals' class="symbol">=</button><br>
+<button onclick="numPressed(0);" id='but0'>0</button>
+<button onclick="decimal();">.</button>
+
+</div>
+
+<script src='js/calculator.js'></script>
+</body></html>
