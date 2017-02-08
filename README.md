@@ -1,6 +1,6 @@
 # js_calculator
 
-View Project at: https://cdn.rawgit.com/RandyRiley76/js_calculator/afd35ace/index.html
+View Project at: https://rawgit.com/RandyRiley76/js_calculator/master/index.html
 
 A Javascript Calculator made as part of the Free Code Camp Curriculum
 
