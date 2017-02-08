@@ -66,7 +66,8 @@ function mathPressed(pressed){
 }
 function equals(){
   var theAnswer = eval(runningEquation.join(''));
-  theAnswer = (Math.floor(( theAnswer )*1000))/1000;
+  //fix floating point errors
+  theAnswer = (Math.floor( theAnswer *10000))/10000;
   if(String(theAnswer).length<9){
     largeDisplay.innerHTML = theAnswer;
     smallDisplay.innerHTML = theAnswer;
