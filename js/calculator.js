@@ -70,6 +70,7 @@ function equals(){
   if(String(theAnswer).length<9){
     largeDisplay.innerHTML = theAnswer;
     smallDisplay.innerHTML = theAnswer;
+    runningEquation = [];
     runningEquation[0] = theAnswer;
     runningElement=0;
     curNumber=theAnswer;
