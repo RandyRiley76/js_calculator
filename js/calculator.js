@@ -4,7 +4,7 @@ var curNumber = "0";
 var symbolLast = false;
 var largeDisplay = document.getElementById("mainText") ;
 var smallDisplay = document.getElementById('smallText');
-//document.getElementById("demo").innerHTML = "Paragraph changed!";
+
 function numPressed(num){
   if(symbolLast == true){
     symbolLast = false;
